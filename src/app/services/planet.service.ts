@@ -25,6 +25,15 @@ export class PlanetService {
 }
 
 const toPlanet = (dto: PlanetDto): Planet => {
+  // const obj = {
+  //   ...dto,
+  //   diameter: parseInt(dto.diameter, 10),
+  //   orbital_period: +dto.orbital_period,
+  //   population: +dto.population,
+  //   created: new Date(Date.parse(dto.created)),
+  //   edited: new Date(Date.parse(dto.edited)),
+  // } as Planet;
+
   return {
     name: dto.name,
     climate: dto.climate,

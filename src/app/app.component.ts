@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { PlanetListComponent } from './planet-list/planet-list.component';
 
@@ -10,5 +10,13 @@ import { PlanetListComponent } from './planet-list/planet-list.component';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
+  // @ViewChild(PlanetListComponent)
+  @ViewChild('pl')
+  listaPlanetasComponent!: PlanetListComponent;
+
   title = 'wplanetas';
+
+  onClick(): void {
+    console.log(this.listaPlanetasComponent.planets);
+  }
 }
