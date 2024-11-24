@@ -1,12 +1,13 @@
-<div class="planet-detail" *ngIf="planet">
+<div class="planet-detail">
+  @if (planet) {
   <div>
-    <span>Nombre: {{ planet.name }}</span>
+    <span data-label="Nombre">{{ planet.name }}</span>
   </div>
   <div>
-    <span>Clima: {{ planet.climate }}</span>
+    <span data-label="Clima">{{ planet.climate }}</span>
   </div>
-
   <div>
-    <span>Diametro: {{ planet.diameter }}</span>
+    <span data-label="Diámetro">{{ planet.diameter }}</span>
   </div>
+  }
 </div>

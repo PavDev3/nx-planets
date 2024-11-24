@@ -15,8 +15,4 @@ export class AppComponent {
   listaPlanetasComponent!: PlanetListComponent;
 
   title = 'wplanetas';
-
-  onClick(): void {
-    console.log(this.listaPlanetasComponent.planets);
-  }
 }
